@@ -7,7 +7,7 @@ def check_bond():
             print("Bond number must be 7 digits")
             continue
         else:
-            with open("bonds.txt", "r") as f:
+            with open("Bonds.txt", "r") as f:
                 bonds = f.read().splitlines()
                 if a in bonds:
                     print("You won this bond!: ", a)
@@ -23,7 +23,7 @@ def addBond():
             continue
         else:
             bond.append(a)
-    with open("bonds.txt", "a") as f:
+    with open("Bonds.txt", "a") as f:
         for b in bond:
             f.write(b + "\n")
     return bond
